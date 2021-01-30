@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pet.name %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @pet.race %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @pet.birthdate %>
+</p>
+
+<p>
+  <strong>Avg_weigth:</strong>
+  <%= @pet.avg_weight %>
+</p>
+
+<p>
+  <strong>Avg_height:</strong>
+  <%= @pet.avg_height %>
+</p>
+
+<p>
+  <strong>Max_height:</strong>
+  <%= @pet.max_height %>
+</p>
+
+<p>
+  <strong>Max_weight:</strong>
+  <%= @pet.max_weight %>
+</p>
+
+<p>
+  <strong>cantidad de mascotas:</strong>
+  <%= @pet.client.qpets %>
+</p>
+
+
+<!-- 
+<table>
+  <thead>
+    <tr>
+      <th>Peso promedio</th>
+      <th>Altura promedio</th>
+      <th>Peso Máximo</th>
+      <th>Altura Máxima</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @pet.avg_weight %></td>
+      <td><%= @pet.avg_height %></td>
+      <td><%= @pet.max_weight %></td>
+      <td><%= @pet.max_height%></td>
+    </tr>
+  </tbody>
+</table> -->
+
+<%= link_to 'Edit', edit_pet_path(@pet) %> |
+<%= link_to 'Back', pets_path %>
